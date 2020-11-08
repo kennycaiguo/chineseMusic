@@ -1,0 +1,17 @@
+2020-11-07 17:09:41 System.IO.FileNotFoundException: 未能找到文件“C:\Users\Administrator.WIN-5OKFMRREPRH\Desktop\MusicDownload\傲骨 (Live) - 谭咏麟.mp3”。
+文件名:“C:\Users\Administrator.WIN-5OKFMRREPRH\Desktop\MusicDownload\傲骨 (Live) - 谭咏麟.mp3”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   在 TagLib.File.LocalFileAbstraction.get_ReadStream()
+   在 TagLib.File.set_Mode(AccessMode value)
+   在 TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   在 TagLib.Mpeg.AudioFile..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)   在 TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   在 MusicTools.Form1.sbWyHoqfpvVdv2I0O5l(Object )
+   在 MusicTools.Form1.dMvu3pSkMX(Object  )
+2020-11-07 19:17:35 System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 DSkin.Common.Collection`1.get_Item(Int32 index)
+   在 MusicTools.Form1.playMusic(Object playID)
